@@ -1,0 +1,35 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;}
+body {
+  background: #fff;
+  font-family: Delicious, "Lucida Grande";
+  color: #aaa;}
+
+a {
+  text-decoration: none;
+  color: #000;}
+  a:hover {
+    text-decoration: underline;}
+
+#wrapper {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0;
+  -moz-border-radius: 6px;
+  -moz-box-shadow: 0 0 4px rgb(210, 210, 210);
+  border: 1px solid #fff;
+  height: 600px;}
+
+header {
+  background: #ddd;
+  padding: 0;}
+  h1 {
+    text-align: center;}
+
+nav ul {
+  list-style: none;
+  text-align: center;}
+  nav ul li {
+    display: inline;}

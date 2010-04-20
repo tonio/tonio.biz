@@ -1,0 +1,12 @@
+/* Delicious: a font by Jos Buivenga (exljbris) -> www.exljbris.com */ 
+@font-face {
+  font-family: Delicious; 
+  src: url('fonts/Delicious-Roman.otf'); 
+}
+
+@font-face {
+  font-family: Delicious; 
+  src: url('fonts/Delicious-Bold.otf'); 
+  font-weight: bold;
+}
+
