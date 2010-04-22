@@ -4,21 +4,47 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Antoine Abt, skieur & dévelopeur web</title>
+  <title>Antoine Abt, skieur & développeur web</title>
 
   <link rel="stylesheet" media="screen" href="fonts.css">
   <link rel="stylesheet" media="screen" href="screen.css">
+
+  <script type="text/javascript" src="mootools-1.2.4-core-yc.js"></script>
+  <script type="text/javascript" src="mootools-1.2.4.4-more-yc.js"></script>
+  <script type="text/javascript">
+    window.addEvent('domready', function(){
+      $$('nav a').set({
+        morph: {
+          duration: 300
+        } 
+      }).addEvents({
+        'mouseover': function(){
+          this.morph({
+            'background-color': '#FDCC5E',
+            'color': '#000',
+          });
+        },
+        'mouseleave': function(){
+          this.morph({
+            'background-color': '#222',
+            'color': '#FFF',
+          });
+        }
+      });
+    });
+  </script>
 </head>
 <body>
 
 
   <div id="wrapper">
-  <div id="badge">
-    <span>tonio.biz</span>
-  </div>
+
+    <div id="badge">
+      <span>tonio.biz</span>
+    </div>
 
     <header>
-      <h1>Antoine Abt, skieur &amp; web<sup>(géo)</sup>dévelopeur</h1>
+      <h1>Antoine Abt, skieur &amp; web<sup>(géo)</sup>développeur</h1>
     </header>
 
     <nav>
@@ -36,7 +62,11 @@
     </section>
 
     <footer>
-      &copy; 2010 <a href="tonio.biz">Antoine Abt</a>
+      <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+        <img src="images/cc-byncsa.png" 
+          title="licence Creative Commons BY-NC-SA"
+          alt="licence Creative Commons BY-NC-SA"/>
+      </a>
     </footer>
 
   </div>

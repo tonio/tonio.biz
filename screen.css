@@ -4,16 +4,26 @@ html, body {
   width: 100%;
   height: 100%;}
 body {
-background:-moz-linear-gradient(
+  background:-moz-linear-gradient(
     260deg,
     rgb(255,255,255) 44%,
     rgb(209,209,209) 100%
-)
-   ;
+  );
+  background:-webkit-gradient(
+    linear,
+    100% 100%,
+    50% 0,
+    from(#ddd),to(#fff)
+    /*color-stop(0.44, rgb(255,255,255)),
+    color-stop(100, rgb(209,209,209))*/
+  );
   font-family: Delicious, "Lucida Grande";
   display: -moz-box;
   -moz-box-pack: center;
   -moz-box-align: center;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
   color: #aaa;}
 
 a {
@@ -21,6 +31,8 @@ a {
   color: #000;}
   a:hover {
     text-decoration: underline;}
+  a img {
+    border: 0;}
 
 #wrapper {
   position: relative;
@@ -30,6 +42,8 @@ a {
   background: #fff url(images/tonio.png) bottom right no-repeat;
   -moz-border-radius: 6px;
   -moz-box-shadow: 0 0 4px rgb(210, 210, 210);
+  -webkit-border-radius: 6px;
+  -webkit-box-shadow: 0 0 4px rgb(210, 210, 210);
   border: 1px solid #fff;}
 
 header {
@@ -52,15 +66,18 @@ header {
   text-align: center;
   color: #a00;
   border: 3px solid rgba(100, 100, 100, 0.2);
+  -webkit-border-radius: 38px 38px 0 38px;
   -moz-border-radius: 38px 38px 0 38px;
-  -moz-transform: rotate(-110deg);}
+  -webkit-transform: rotate(-65deg);
+  -moz-transform: rotate(-65deg);}
   #badge span {
     font-size: 2em;
     display: block;
     text-shadow: 0 0 4px #222;
     text-indent: -0.5em;
     color: #fff;
-    -moz-transform: rotate(125deg);}
+    -webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);}
 nav {
   -moz-transform: rotate(10deg);}
 nav ul {
@@ -92,8 +109,10 @@ nav ul {
     text-decoration: none;
     background-color: #111;}
   nav li:first-child a {
+    -webkit-border-radius: 4px 0 0 4px;
     -moz-border-radius: 4px 0 0 4px;}
   nav li:last-child a {
+    -webkit-border-radius: 0 4px 4px 0;
     -moz-border-radius: 0 4px 4px 0;}
 
 section {
@@ -102,8 +121,20 @@ section {
   section p {
     margin: 0 10px;
     padding: 5px;}
+  section > p:first-letter {
+    float: left;
+    background: rgba(255, 171, 0, 0.5);
+    border: 1px solid rgba(100, 100, 100, 0.2);
+    border-width: 0 0 1px 1px;
+    padding: 5px 5px;
+    font-weight: bold;
+    margin-right: 2px;
+    color: #666;
+    margin-top: 3px;
+    -webkit-border-radius: 5px 5px 5px 0;
+    -moz-border-radius: 5px 5px 5px 0;}
 
 footer {
   display: block;
-  margin: 10px 0;
+  line-height: 25px;
   padding: 20px;}
