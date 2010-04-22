@@ -10,3 +10,8 @@
   font-weight: bold;
 }
 
+@font-face {
+    font-family: Fertigo;
+    src: url(fonts/Fertigo_PRO.otf) format("opentype");
+}
+
