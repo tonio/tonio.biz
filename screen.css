@@ -48,7 +48,7 @@ header {
 }
 h1 {
     font-size: 2.8em;
-    font-family: League;
+    font-family: League, Monaco, Arial;
     font-weight: normal;
     letter-spacing: -1px;
     padding: 5px 0;
@@ -90,7 +90,7 @@ section > p:first-letter {
     color: rgba(0,0,0,0.6);
     display: inline-block;
     float: left;
-    font-family: League;
+    font-family: League, Monaco, Arial;
     font-size: 1.7em;
     font-weight: bold;
     margin-right: 0.2em;
@@ -101,8 +101,9 @@ section > p:first-letter {
 
 footer {
     -moz-box-shadow: 1px 1px 0 0 #fff;
+    -webkit-box-shadow: 1px 1px 0 0 #fff;
     background: -moz-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255,0)), to(rgb(0, 0, 0,0.1)));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255,0)), to(rgba(0, 0, 0,0.1)));
     border-radius: 6px;
     margin: 0 20px;
     padding: 20px;
