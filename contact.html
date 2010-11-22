@@ -12,7 +12,7 @@
 
   <meta name="geo.country" content="FR" />
   <meta name="geo.position" content="45.597236,5.87897" />
-  
+
 </head>
 <body>
 
@@ -26,25 +26,27 @@
 
     <nav>
       <ul>
-        <li class="active"><a href="/t2">/home/tonio</a>  
-        <li><a href="/experience">~/experience</a>  
-        <li><a href="/contact">~/contact</a>  
+        <li><a href="/">/home/tonio</a>
+        <li><a href="/experience">~/experience</a>
+        <li class="active">~/contact
       </ul>
     </nav>
 
     <section>
-      <p>
-        Welcome to my playground… I'm a 30 year old web developer
-        working for <a href="http://camptocamp.com">camptocamp</a>, a swiss/french company.<br/>
-        I'm doing (GIS) websites with open source products: OpenLayers, GeoExt,
-        MapFish.
-      </p>
-      <p>
-        This site is just live test to play with modern technologies and is not
-        likely to work with «old» browsers…<br/>
-        One — hopefully — useful thing you could find here is a translation of
-        the <a href="http://doc.tonio.biz/mootools">Mootools documentation</a> in french.
-      </p>
+      <div id="hcard-Antoine-Abt" class="vcard">
+        <span class="fn">Antoine Abt</span>
+        <br/>
+        <a class="email" href="mailto:tonio@tonio.biz">tonio@tonio.biz</a>
+        <div class="adr">
+          <div class="street-address">59, rue curé Jacquier</div>
+          <span class="locality">La Motte Servolex</span>
+          , 
+          <span class="postal-code">73290</span>
+        </div>
+      </div>
+      <a href="#map" id="small">
+          ○
+      </a>
     </section>
 
     <footer class="bkg">
@@ -56,6 +58,13 @@
 
   </div>
 
+  <div id="map">the map is loading…</div>
+
+  <script type="text/javascript">
+      document.getElementById('small').onclick = function() {
+          document.getElementById('map').style.display = 'block';
+      }
+  </script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-157281-3']);

@@ -73,6 +73,13 @@ nav ul li.active:after {
     color: #000;
 }
 
+.bkg {
+    -moz-box-shadow: 1px 1px 0 0 #fff;
+    -webkit-box-shadow: 1px 1px 0 0 #fff;
+    border-radius: 6px;
+    padding: 20px;
+}
+
 section {
     margin: 0;
     padding: 20px;
@@ -98,15 +105,53 @@ section > p:first-letter {
     padding: 0.3em 0.4em 0.4em;
     text-shadow: 1px 1px 0 #fff;
 }
+section pre {
+    -moz-box-shadow: 1px 1px 0 0 #000;
+    background: rgba(0,0,0,0.1);
+    font-family: Monaco, Monospace;
+    font-size: 0.8em;
+    color: #333;
+    text-shadow: none;
+}
+#small {
+    background: rgba(0,0,0,0.1) url(tile1.png) center 20px no-repeat;
+    border-radius: 6px;
+    color: #f00;
+    display: block;
+    height: 296px;
+    line-height: 296px;
+    margin: 20px auto 0;
+    text-align: center;
+    width: 296px;
+}
+#small:hover {
+    background-image: url(tile2.png);
+    text-decoration: none;
+}
+#map {
+    background: #fff;
+    display: none;
+    height: 100%;
+    left: 0;
+    line-height: 300px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+pre .keyword              { font-weight: bold }
+pre .string, pre .regexp { color: #ee0e60 }
+pre .class, pre .special { color: blue }
+pre .number               { color: #5ed0ee; text-shadow: 0 0 1px #FFF }
+pre .comment              { color: grey }
+
 
 footer {
-    -moz-box-shadow: 1px 1px 0 0 #fff;
-    -webkit-box-shadow: 1px 1px 0 0 #fff;
     background: -moz-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255,0)), to(rgba(0, 0, 0,0.1)));
-    border-radius: 6px;
-    margin: 0 20px;
-    padding: 20px;
+    margin: 0 20px 20px;
 }
 
 @font-face {
