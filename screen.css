@@ -46,8 +46,8 @@ a img {
 }
 
 header {
-    padding: 0;
-    margin: 100px 0 0;
+    margin: 0;
+    padding: 90px 0 0;
 }
 h1 {
     font-size: 2.8em;
@@ -141,15 +141,17 @@ section pre {
     text-decoration: none;
 }
 #small span {
-    width: 256px;
-    height: 256px;
-    display: inline-block;
-    line-height: 256px;
-    background: transparent url(tile1.png) top left no-repeat;
     -moz-transition: background .3s ease;
     -o-transition: background .3s ease;
     -webkit-transition: background .3s ease;
+    background: transparent url(tile1.png) top left no-repeat;
+    border: 5px solid rgba(255,255,255,0.3);
+    border-radius: 3px;
+    display: inline-block;
+    height: 256px;
+    line-height: 256px;
     transition: background .3s ease;
+    width: 256px;
 }
 #small:hover span{
     background-image: url(tile2.png);

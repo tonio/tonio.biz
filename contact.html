@@ -71,6 +71,7 @@
               txt = $('load').innerHTML;
           $('small').onclick = function() {
               mapDiv.style.display = 'block';
+              document.body.style.overflowX = 'hidden';
               require(['OpenLayers.js'], function(){
                   $('load').innerHTML = '';
                   $('closemap').className = 'btn';
