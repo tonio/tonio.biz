@@ -5,11 +5,11 @@ html, body {
     width: 100%;
 }
 body {
-    -moz-box-align: center;
+    -moz-box-align: top;
     -moz-box-pack: center;
-    -webkit-box-align: center;
+    -webkit-box-align: top;
     -webkit-box-pack: center;
-    box-align: center;
+    box-align: top;
     box-pack: center;
     background: #fff url(bg.jpg) top left repeat;
     color: #888;
@@ -47,6 +47,7 @@ a img {
 
 header {
     padding: 0;
+    margin: 100px 0 0;
 }
 h1 {
     font-size: 2.8em;
