@@ -58,12 +58,18 @@
 
   </div>
 
-  <div id="map">the map is loading…</div>
+  <div id="map">the map is loading…<a href="/contact" id="closemap">close</a></div>
 
   <script type="text/javascript">
-      document.getElementById('small').onclick = function() {
-          document.getElementById('map').style.display = 'block';
-      }
+      (function(){
+          var map = document.getElementById('map');
+          document.getElementById('small').onclick = function() {
+              map.style.display = 'block';
+          }
+          document.getElementById('closemap').onclick = function() {
+              map.style.display = 'none';
+          }
+      })();
   </script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
