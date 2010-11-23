@@ -2,3 +2,5 @@ RewriteEngine On
 
 RewriteRule ^experience$  experience.html [QSA]
 RewriteRule ^contact$     contact.html    [QSA]
+
+AddOutputFilterByType DEFLATE text/html text/plain application/javascript

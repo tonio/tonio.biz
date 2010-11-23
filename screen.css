@@ -72,7 +72,7 @@ nav ul li {
     color: #444;
 }
 nav a {
-    padding: 2px 6px 4px;
+    padding: 2px 6px 3px;
     -moz-box-shadow: 1px 1px 0 0 #fff;
     -webkit-box-shadow: 1px 1px 0 0 #fff;
     border-radius: 6px;
@@ -131,18 +131,32 @@ section pre {
     color: #333;
 }
 #small {
-    background: rgba(0,0,0,0.1) url(tile1.png) center 20px no-repeat;
+    background: rgba(0,0,0,0.1);
     border-radius: 6px;
     color: #f00;
     display: block;
-    height: 296px;
-    line-height: 296px;
     margin: 20px auto 0;
+    padding: 20px 30px;
     text-align: center;
-    width: 296px;
+    text-decoration: none;
 }
-#small:hover {
+#small span {
+    width: 256px;
+    height: 256px;
+    display: inline-block;
+    line-height: 256px;
+    background: transparent url(tile1.png) top left no-repeat;
+    -moz-transition: background .3s ease;
+    -o-transition: background .3s ease;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+}
+#small:hover span{
     background-image: url(tile2.png);
+    text-decoration: none;
+}
+#small span:hover {
+    background-image: url(tile3.png);
     text-decoration: none;
 }
 #map {
@@ -150,12 +164,31 @@ section pre {
     display: none;
     height: 100%;
     left: 0;
-    line-height: 300px;
     position: absolute;
     text-align: center;
     top: 0;
     width: 100%;
     z-index: 10;
+}
+#map .btn {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 100px;
+    margin-left: -50px;
+    z-index: 1005;
+    background: rgba(0,0,0,0.5);
+    color: #ccc;
+    text-shadow: 0 0 1px #000;
+    border-radius: 6px;
+    -moz-transition: background .3s ease;
+    -o-transition: background .3s ease;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+}
+#map .btn:hover {
+    background: rgba(155,0,0,0.8);
+    text-decoration: none;
 }
 
 pre .keyword              { font-weight: bold }
@@ -166,8 +199,15 @@ pre .comment              { color: grey }
 
 
 footer {
-    background: -moz-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255,0)), to(rgba(0, 0, 0,0.1)));
+    background: -moz-linear-gradient(
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(rgba(255, 255, 255,0)), 
+        to(rgba(0, 0, 0,0.1))
+    );
     margin: 0 20px 20px;
 }
 

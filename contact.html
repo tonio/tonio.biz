@@ -45,7 +45,7 @@
         </div>
       </div>
       <a href="#map" id="small">
-          ○
+          <span>○</span>
       </a>
     </section>
 
@@ -58,20 +58,47 @@
 
   </div>
 
-  <div id="map">the map is loading…<a href="/contact" id="closemap">close</a></div>
+  <div id="map">
+      <span id="load">map is loading…&nbsp;&nbsp;</span>
+      <a href="/contact" id="closemap">close</a>
+  </div>
 
-  <script type="text/javascript">
-      (function(){
-          var map = document.getElementById('map');
-          document.getElementById('small').onclick = function() {
-              map.style.display = 'block';
+  <script src="require.js"></script>
+  <script>
+      require.ready(function(){
+          var $ = function(i){ return document.getElementById(i) },
+              mapDiv = $('map'),
+              txt = $('load').innerHTML;
+          $('small').onclick = function() {
+              mapDiv.style.display = 'block';
+              require(['OpenLayers.js'], function(){
+                  $('load').innerHTML = '';
+                  $('closemap').className = 'btn';
+                  var o = OpenLayers;
+                  var map = new o.Map({div: 'map', theme: null, controls: []});
+                  map.addLayer(new o.Layer.XYZ('OSM',
+                      [ 
+                          'http://a.tile.openstreetmap.org/${z}/${x}/${y}.png',
+                          'http://b.tile.openstreetmap.org/${z}/${x}/${y}.png',
+                          'http://c.tile.openstreetmap.org/${z}/${x}/${y}.png'
+                      ],
+                      { 
+                          buffer: 0,
+                          sphericalMercator: true
+                      }
+                  ));
+                  map.addControl(new o.Control.Navigation());
+                  map.setCenter(new o.LonLat(654430,5716037), 10);
+              });
           }
-          document.getElementById('closemap').onclick = function() {
-              map.style.display = 'none';
+          $('closemap').onclick = function() {
+              $('load').innerHTML = txt;
+              $('closemap').className = '';
+              mapDiv.style.display = 'none';
           }
-      })();
+      });
   </script>
-  <script type="text/javascript">
+  <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-157281-3']);
     _gaq.push(['_setDomainName', '.tonio.biz']);
