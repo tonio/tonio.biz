@@ -100,7 +100,7 @@ nav ul li.active:after {
 
 section {
     margin: 0;
-    padding: 20px;
+    padding: 20px 20px 0;
 }
 section p {
     margin: 1.6em 0;

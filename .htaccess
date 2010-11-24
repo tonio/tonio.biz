@@ -3,4 +3,6 @@ RewriteEngine On
 RewriteRule ^experience$  experience.html [QSA]
 RewriteRule ^contact$     contact.html    [QSA]
 
+RedirectPermanent /AntoineAbt.pdf /experience
+
 AddOutputFilterByType DEFLATE text/html text/plain application/javascript
