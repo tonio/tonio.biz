@@ -135,7 +135,7 @@ section pre {
     border-radius: 6px;
     color: #f00;
     display: block;
-    margin: 20px auto 0;
+    margin: 20px auto 20px;
     padding: 20px 30px;
     text-align: center;
     text-decoration: none;
@@ -144,21 +144,21 @@ section pre {
     -moz-transition: background .3s ease;
     -o-transition: background .3s ease;
     -webkit-transition: background .3s ease;
-    background: transparent url(tile1.png) top left no-repeat;
+    background: transparent url(t1.png) top left no-repeat;
     border: 5px solid rgba(255,255,255,0.3);
     border-radius: 3px;
     display: inline-block;
-    height: 256px;
-    line-height: 256px;
+    height: 267px;
+    line-height: 267px;
     transition: background .3s ease;
-    width: 256px;
+    width: 400px;
 }
 #small:hover span{
-    background-image: url(tile2.png);
+    background-image: url(t2.png);
     text-decoration: none;
 }
 #small span:hover {
-    background-image: url(tile3.png);
+    background-image: url(t3.png);
     text-decoration: none;
 }
 #map {
