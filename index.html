@@ -13,26 +13,17 @@
   <meta name="geo.country" content="FR" />
   <meta name="geo.position" content="45.597236,5.87897" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,
+  maximum-scale=1,user-scalable=no">
+
   <link rel="icon" type="image/png" href="/favicon.png" />
   
 </head>
 <body>
 
-  <img src="dessin.png" width="300" height="300" alt="dessin" id="logo"/>
-
-  <div id="wrapper">
-
     <header>
-      <h1>Antoine Abt, skier &amp; web<sup>(geo)</sup>developer</h1>
+      <h1>Antoine&nbsp;Abt, skier&nbsp;&amp;&nbsp;web<sup>(geo)</sup>developer</h1>
     </header>
-
-    <nav>
-      <ul>
-        <li class="active">/home/tonio  
-        <li><a href="/experience">~/experience</a>  
-        <li><a href="/contact">~/contact</a>  
-      </ul>
-    </nav>
 
     <section>
       <p>
@@ -53,6 +44,64 @@
         some times to polish it.
       </p>
     </section>
+    
+    <section>
+      <pre class="bkg">
+{
+    name: 'Antoine Abt'
+    ,age: 30
+    ,location: 'F 73290, La Motte Servolex'
+    ,skills: [
+        frontend: [
+            'mootools', 'extjs', 'jquery'
+            ,'geoext' , 'html', 'css'
+            ,'standards' ,'accessibility'
+        ]
+        ,backend: [
+            'symfony', 'pylons',
+            'mapfish', 'nodejs'
+        ]
+        ,geo: [
+            'openlayers','postgis','mapserver'
+        ]
+    ]
+    ,employments: [
+        {
+            company: 'Camptocamp'
+            ,location: 'Le Bourget du Lac'
+            ,from: 2008
+            ,to: 'now'
+        }
+        ,{
+            company: 'Agence Interactive'
+            ,location: 'Lyon'
+            ,from: 2007
+            ,to: 2008
+        }
+        ,{
+            company: 'Skipass.com'
+            ,location: 'Grenoble'
+            ,from: 2004
+            ,to: 2007
+        }
+    ]
+    ,education: [
+        {
+            title: 'Certification Zend PHP5'
+            ,location: 'Lyon'
+            ,date: 2007
+        }
+        ,{
+            title: 'Licence d’informatique'
+            ,location: 'UFR IMA — UJF Grenoble'
+            ,date: 2001
+        }
+    ]
+}</pre>
+    </section>
+    <script type="text/javascript" src="hijs.js"></script>
+
+  <img src="dessin.png" width="300" height="300" alt="dessin" id="logo"/>
 
     <footer class="bkg">
       Follow me on <a href="https://twitter.com/brankgnol">twitter</a> &amp; <a href="https://github.com/tonio">github</a>
@@ -60,8 +109,6 @@
           CC BY-NC-SA
       </a>
     </footer>
-
-  </div>
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
