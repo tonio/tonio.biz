@@ -39,18 +39,20 @@ h1 {
     text-shadow    : 1px 1px 0 #fff;
     margin         : 0;
 }
+h2:after {
+    content : ' ∞';
+    color   : rgba(0,0,0,0.1);
+}
 
 section {
     margin: 0;
     padding: 1em 1.5em 0;
 }
-section pre {
-    -moz-box-shadow : 1px 1px 0 0 #000;
-    background      : rgba(150,150,150,0.2);
-    font-family     : Monaco, Monospace;
-    font-size       : 12px;
-    color           : #333;
-    width           : 80%;
+
+section ul {
+    list-style : circle;
+    margin     : 0.5em 0;
+    padding    : 0;
 }
 #small {
     background      : rgba(0,0,0,0.1);
