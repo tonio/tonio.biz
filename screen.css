@@ -10,11 +10,15 @@ body {
 }
 
 a {
-    color           : #444;
+    color           : #666;
     text-decoration : none;
+    border          : 1px dotted rgba(0,0,0,0.3);
+    border-width    : 0 0 1px 0;
 }
-a                   : hover {
-    text-decoration : underline;
+a:hover {
+    color: #000;
+    border-color: #da206b;
+    border-style: solid;
 }
 a img {
     border : 0;
@@ -34,13 +38,6 @@ h1 {
     padding        : 0.7em 0.7em 0;
     text-shadow    : 1px 1px 0 #fff;
     margin         : 0;
-}
-
-.bkg {
-    -moz-box-shadow: 1px 1px 0 0 #fff;
-    -webkit-box-shadow: 1px 1px 0 0 #fff;
-    border-radius: 6px;
-    padding: 20px;
 }
 
 section {
@@ -117,7 +114,10 @@ section pre {
     background: rgba(155,0,0,0.8);
     text-decoration: none;
 }
-
+footer {
+    padding : 1.5em;
+    margin  : 0;
+}
 
 @font-face {
     font-family : "Averia";
