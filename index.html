@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0,
         maximum-scale=1,user-scalable=no">
 
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="favicon.png" />
 
     </head>
     <body>
@@ -58,6 +58,9 @@
 
         <section>
             <h2>contact</h2>
+            <a href="#map" id="small">
+                <span>&bull;</span>
+            </a>
             <div id="hcard-Antoine-Abt" class="vcard">
                 <span class="fn">Antoine Abt</span>
                 <br/>
@@ -69,10 +72,12 @@
                 </div>
                 <a class="email" href="mailto:tonio@tonio.biz">tonio@tonio.biz</a>
             </div>
-            <a href="#map" id="small">
-                <span>&bull;</span>
-            </a>
         </section>
+
+        <div id="map">
+            <span id="load">map is loading…&nbsp;&nbsp;</span>
+            <a href="/contact" id="closemap">close</a>
+        </div>
 
         <img src="dessin.png" width="300" height="300" alt="dessin" id="logo"/>
 
@@ -80,14 +85,50 @@
             <p>
                 Find me on <a href="https://twitter.com/brankgnol">twitter</a>,
                 <a href="https://github.com/tonio">github</a>
-                &amp; <a href="https://ohloh.net/accounts/tonio">ohloh</a>
-                — Content under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+                &amp; <a href="https://ohloh.net/accounts/tonio">ohloh</a><br>
+                Content and design under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
                     CC BY-NC-SA
                 </a>
             </p>
         </footer>
 
-        <script type="text/javascript">
+        <script src="require.js"></script>
+        <script>
+            require.ready(function(){
+                var $ = function(i){ return document.getElementById(i) },
+                    mapDiv = $('map'),
+                    txt = $('load').innerHTML;
+                $('small').onclick = function() {
+                    mapDiv.style.display = 'block';
+                    mapDiv.style.height = '100%';
+                    require(['OpenLayers.js'], function(){
+                        $('load').innerHTML = '';
+                        $('closemap').className = 'btn';
+                        var o = OpenLayers;
+                        var map = new o.Map({div: 'map', theme: null, controls: []});
+                        map.addLayer(new o.Layer.XYZ('OSM',
+                            [
+                                'http://a.tile.openstreetmap.org/${z}/${x}/${y}.png',
+                                'http://b.tile.openstreetmap.org/${z}/${x}/${y}.png',
+                                'http://c.tile.openstreetmap.org/${z}/${x}/${y}.png'
+                            ],
+                            { 
+                                buffer: 0,
+                                sphericalMercator: true
+                            }
+                        ));
+                        map.addControl(new o.Control.Navigation());
+                        map.setCenter(new o.LonLat(654430,5716037), 13);
+                    });
+                }
+                $('closemap').onclick = function() {
+                    $('load').innerHTML = txt;
+                    $('closemap').className = '';
+                    mapDiv.style.display = 'none';
+                    return false;
+                }
+            });
+
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-157281-3']);
             _gaq.push(['_setDomainName', '.tonio.biz']);

@@ -3,7 +3,7 @@ html, body {
     padding : 0;
 }
 body {
-    background  : #eee;
+    background  : white;
     color       : #333;
     font-family : Averia, "Lucida Grande", Arial;
     font-size   : 16px;
@@ -36,7 +36,6 @@ h1 {
     letter-spacing : -2px;
     line-height    : 1em;
     padding        : 0.7em;
-    text-shadow    : 1px 1px 0 #fff;
     margin         : 0;
 }
 h2 {
@@ -48,21 +47,38 @@ h2:after {
 }
 
 section, footer {
-    margin: 0;
-    padding: 0 1.5em;
+    margin            : 0;
+    padding           : 0 1.5em;
 }
 
 section ul {
-    list-style : circle;
+    list-style : none;
     margin     : 0.5em 0;
     padding    : 0;
+}
+section li:before {
+    content   : 'o ';
+    margin    : -0.4em 0 0 -1em;
+    font-size : 80%;
+    color     : rgba(0,0,0,0.1);
+}
+section li {
+    margin: 0;
+    padding: 0.2em 0 0.2em 0em;
+}
+.vcard {
+    display        : inline-block;
+    vertical-align : top;
+    margin-top     : 10px;
 }
 #small {
     background      : rgba(0,0,0,0.1);
     border-radius   : 6px;
     color           : #f00;
-    display         : block;
-    margin          : 20px auto 20px;
+    display         : inline-block;
+    max-width       : 360px;
+    width           : 100%;
+    margin          : 10px 20px 0 0;
     padding         : 0;
     text-align      : center;
     text-decoration : none;
@@ -118,4 +134,26 @@ section ul {
     font-family : "Averia";
     font-weight : bold;
     src         : url(fonts/Averia-Bold.ttf) format("truetype");
+}
+
+@media (max-width: 768px) {
+    body {
+    }
+}
+@media (min-width: 768px) and (max-width: 980px) {
+    h1 {
+        padding: 0.7em 0;
+    }
+    header, section, footer {
+        width  : 500px;
+        margin : 0 auto;
+    }
+    #logo {
+        margin : 0 auto;
+        display: block;
+    }
+}
+@media (min-width: 980px) {
+    body {
+    }
 }
