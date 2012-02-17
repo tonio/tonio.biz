@@ -40,7 +40,7 @@
         </section>
 
         <section>
-            <h2>work</h2>
+            <h2 id="work">work</h2>
             <p>
                 As a web developer since nearly 8 years, I've been working for:
                 <ul>
@@ -57,7 +57,7 @@
         </section>
 
         <section>
-            <h2>contact</h2>
+            <h2 id="contact">contact</h2>
             <a href="#map" id="small">
                 <span>&bull;</span>
             </a>
@@ -70,7 +70,7 @@
                     ,
                     <span class="postal-code">F-73290</span>
                 </div>
-                <a class="email" href="mailto:tonio@tonio.biz">tonio@tonio.biz</a>
+                <a class="email" href="mailto:tonio@abt.im">tonio@abt.im</a>
             </div>
         </section>
 
@@ -96,7 +96,8 @@
             require.ready(function(){
                 var $ = function(i){ return document.getElementById(i) },
                     mapDiv = $('map'),
-                    txt = $('load').innerHTML;
+                    txt = $('load').innerHTML,
+                    hash = null;
                 var showMap = function() {
                     mapDiv.style.display = 'block';
                     mapDiv.style.height = '100%';
