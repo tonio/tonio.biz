@@ -85,10 +85,9 @@
             <p>
                 Find me on <a href="https://twitter.com/brankgnol">twitter</a>,
                 <a href="https://github.com/tonio">github</a>
-                &amp; <a href="https://ohloh.net/accounts/tonio">ohloh</a><br>
+                &amp; <a href="https://ohloh.net/accounts/tonio">ohloh</a>.<br>
                 Content and design under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-                    CC BY-NC-SA
-                </a>
+                    CC BY-NC-SA</a>.
             </p>
         </footer>
 
@@ -98,7 +97,7 @@
                 var $ = function(i){ return document.getElementById(i) },
                     mapDiv = $('map'),
                     txt = $('load').innerHTML;
-                $('small').onclick = function() {
+                var showMap = function() {
                     mapDiv.style.display = 'block';
                     mapDiv.style.height = '100%';
                     require(['OpenLayers.js'], function(){
@@ -118,13 +117,18 @@
                             }
                         ));
                         map.addControl(new o.Control.Navigation());
-                        map.setCenter(new o.LonLat(654430,5716037), 13);
+                        map.setCenter(new o.LonLat(653464,5720928), 13);
                     });
                 }
+                if (window.location.hash==='#map') {
+                    showMap();
+                }
+                $('small').onclick = showMap;
                 $('closemap').onclick = function() {
                     $('load').innerHTML = txt;
                     $('closemap').className = '';
                     mapDiv.style.display = 'none';
+                    window.location.hash = '#';
                     return false;
                 }
             });
