@@ -1,80 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
 
-  <title>Antoine Abt, skier & web developer</title>
+        <title>Antoine Abt, skier & web developer</title>
 
-  <link rel="stylesheet" media="screen" href="screen.css">
+        <link rel="stylesheet" media="screen" href="screen.css">
 
-  <link rel="openid.server" href="http://www.myopenid.com/server"/>
-  <link rel="openid.delegate" href="http://tonio.myopenid.com"/>
+        <link rel="openid.server" href="http://www.myopenid.com/server"/>
+        <link rel="openid.delegate" href="http://tonio.myopenid.com"/>
 
-  <meta name="geo.country" content="FR" />
-  <meta name="geo.position" content="45.597236,5.87897" />
+        <meta name="geo.country" content="FR" />
+        <meta name="geo.position" content="45.628,5.8699" />
 
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  
-</head>
-<body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
 
-  <img src="dessin.png" width="300" height="300" alt="dessin" id="logo"/>
+        <link rel="icon" type="image/png" href="favicon.png" />
+    </head>
+    <body>
 
-  <div id="wrapper">
+        <header>
+            <h1>Antoine Abt, skier &amp; web<sup>(geo)</sup>developer</h1>
+        </header>
 
-    <header>
-      <h1>Antoine Abt, skier &amp; web<sup>(geo)</sup>developer</h1>
-    </header>
+        <section>
+            <p>
+                I’m a web developer living in Chambéry, France. I build websites, &amp;
+                mobile ones, with Open Source technologies. I’m experienced in
+                <a href="http://en.wikipedia.org/wiki/Web_mapping">webmapping</a>.
+            </p>
+            <p>
+                I do like simple, usable and accessible websites.
+            </p>
+            <p>
+                I’m currently working for <a href="http://camptocamp.com">camptocamp</a>.
+            </p>
+        </section>
 
-    <nav>
-      <ul>
-        <li class="active">/home/tonio  
-        <li><a href="/experience">~/experience</a>  
-        <li><a href="/contact">~/contact</a>  
-      </ul>
-    </nav>
+        <section>
+            <h2 id="work">work</h2>
+            <p>
+                As a web developer since nearly 8 years, I've been working for:
+                <ul>
+                    <li><a href="http://skipass.com">skipass.com</a> — Grenoble,</li>
+                    <li><a href="http://agenceinteractive.com">Agence Interactive</a> — Lyon.</li>
+                </ul>
+            </p>
+            <p>
+                I'm a big <a href="http://mootools.net">mootools</a> fan.
+                One hopefully useful thing you could find here is a — incomplete,
+                outdated — translation of
+                the <a href="http://docs.tonio.biz/mootools">Mootools documentation</a> in french.
+            </p>
+        </section>
 
-    <section>
-      <p>
-        I'm a web developer
-        for <a href="http://camptocamp.com">camptocamp</a>, 
-        a swiss/french company, where I'm doing GIS websites with open source products: OpenLayers, GeoExt,
-        MapFish.
-      </p>
-      <p>
-        Mootools, I'm a big <a href="">mootools</a> fan too.
-        One — hopefully — useful thing you could find here is a (incomplete) translation of
-        the <a href="http://docs.tonio.biz/mootools">Mootools documentation</a> in french.
-      </p>
-      <p>
-        This site is just live demo to play with modern technologies and is not
-        likely to play nicely with browsers older than FF4 or Chrome 7…<br/>
-        “<s>Release often</s>, release early”, hope I’ll got
-        some times to polish it.
-      </p>
-    </section>
+        <section>
+            <h2 id="contact">contact</h2>
+            <a href="#map" id="small">
+                <span>&bull;</span>
+            </a>
+            <div id="hcard-Antoine-Abt" class="vcard">
+                <span class="fn">Antoine Abt</span>
+                <br/>
+                <div class="adr">
+                    <div class="street-address">1115, route de l’école du Tremblay</div>
+                    <span class="locality">La Motte Servolex</span>
+                    ,
+                    <span class="postal-code">F-73290</span>
+                </div>
+                <a class="email" href="mailto:tonio@abt.im">tonio@abt.im</a>
+            </div>
+        </section>
 
-    <footer class="bkg">
-      Follow me on <a href="https://twitter.com/brankgnol">twitter</a> &amp; <a href="https://github.com/tonio">github</a>
-      — Content under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-          CC BY-NC-SA
-      </a>
-    </footer>
+        <div id="map">
+            <span id="load">map is loading…&nbsp;&nbsp;</span>
+            <a href="/contact" id="closemap">close</a>
+        </div>
 
-  </div>
+        <img src="dessin.png" width="300" height="300" alt="dessin" id="logo"/>
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-157281-3']);
-    _gaq.push(['_setDomainName', '.tonio.biz']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+        <footer>
+            <p>
+                Find me on <a href="https://twitter.com/brankgnol">twitter</a>,
+                <a href="https://github.com/tonio">github</a>
+                &amp; <a href="https://ohloh.net/accounts/tonio">ohloh</a>.<br>
+                Content and design under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+                    CC BY-NC-SA</a>.
+            </p>
+        </footer>
 
-</body>
+        <script src="require.js"></script>
+        <script>
+            require.ready(function(){
+                var $ = function(i){ return document.getElementById(i) },
+                    mapDiv = $('map'),
+                    txt = $('load').innerHTML,
+                    hash = null;
+                var showMap = function() {
+                    mapDiv.style.display = 'block';
+                    mapDiv.style.height = '120%';
+                    require(['OpenLayers.js'], function(){
+                        $('load').innerHTML = '';
+                        $('closemap').className = 'btn';
+                        var o = OpenLayers;
+                        var map = new o.Map({div: 'map', theme: null, controls: []});
+                        map.addLayer(new o.Layer.XYZ('OSM',
+                            [
+                                'http://a.tile.openstreetmap.org/${z}/${x}/${y}.png',
+                                'http://b.tile.openstreetmap.org/${z}/${x}/${y}.png',
+                                'http://c.tile.openstreetmap.org/${z}/${x}/${y}.png'
+                            ],
+                            { 
+                                buffer: 0,
+                                sphericalMercator: true,
+                                transitionEffect: 'resize'
+                            }
+                        ));
+                        map.addControl(new o.Control.Navigation());
+                        map.setCenter(new o.LonLat(653464,5720928), 13);
+                    });
+                }
+                if (window.location.hash==='#map') {
+                    showMap();
+                }
+                $('small').onclick = showMap;
+                $('closemap').onclick = function() {
+                    $('load').innerHTML = txt;
+                    $('closemap').className = '';
+                    mapDiv.style.display = 'none';
+                    window.location.hash = '#';
+                    return false;
+                }
+            });
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-157281-3']);
+            _gaq.push(['_setDomainName', '.tonio.biz']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+    </body>
 </html>
 

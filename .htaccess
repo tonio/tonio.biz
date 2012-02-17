@@ -1,8 +1,7 @@
 RewriteEngine On
 
-RewriteRule ^experience$  experience.html [QSA]
-RewriteRule ^contact$     contact.html    [QSA]
-
 RedirectPermanent /AntoineAbt.pdf /experience
+RedirectPermanent /experience /index.html#work
+RedirectPermanent /contact /index.html#contact
 
 AddOutputFilterByType DEFLATE text/html text/plain application/javascript
