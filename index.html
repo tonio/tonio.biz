@@ -98,7 +98,7 @@
                     hash = null;
                 var showMap = function() {
                     mapDiv.style.display = 'block';
-                    mapDiv.style.height = '100%';
+                    mapDiv.style.height = '120%';
                     require(['OpenLayers.js'], function(){
                         $('load').innerHTML = '';
                         $('closemap').className = 'btn';
@@ -112,7 +112,8 @@
                             ],
                             { 
                                 buffer: 0,
-                                sphericalMercator: true
+                                sphericalMercator: true,
+                                transitionEffect: 'resize'
                             }
                         ));
                         map.addControl(new o.Control.Navigation());
