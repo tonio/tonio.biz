@@ -1,158 +1,185 @@
 html, body {
-    margin  : 0;
-    padding : 0;
+  margin  : 0;
+  padding : 0;
+  height  : 100%;
 }
 body {
-    background  : white;
-    color       : #333;
-    font-family : Averia, "Lucida Grande", Arial;
-    font-size   : 16px;
+  background  : #333 url(footerbg.png) top left repeat;
+  color       : #eee;
+  font-family : Averia, "Lucida Grande", Arial;
+  font-size   : 16px;
+  overflow-y  : scroll;
 }
 
 a {
-    color           : #666;
-    text-decoration : none;
-    border          : 1px dotted rgba(0,0,0,0.3);
-    border-width    : 0 0 1px 0;
+  color           : #666;
+  text-decoration : none;
+  border          : 1px dotted rgba(0,0,0,0.3);
+  border-width    : 0 0 1px 0;
 }
 a:hover {
-    color: #000;
-    border-color: #da206b;
-    border-style: solid;
+  color        : #000;
+  border-color : #da206b;
+  border-style : solid;
 }
 a img {
-    border : 0;
+  border : 0;
 }
 
+#wrapper {
+  position   : relative;
+  min-height : 100%;
+  width      : 100%;
+  background : #fff;
+  color      : #333;
+  box-shadow : 0px 4px 15px #181818;
+}
 
 header {
-    margin  : 0;
-    padding : 0;
+  margin  : 0;
+  padding : 0;
 }
 h1 {
-    color          : rgba(0,0,0,0.6);
-    font-size      : 2em;
-    font-weight    : normal;
-    letter-spacing : -2px;
-    line-height    : 1em;
-    padding        : 0.7em;
-    margin         : 0;
+  color          : rgba(0,0,0,0.6);
+  font-size      : 2em;
+  font-weight    : normal;
+  letter-spacing : -2px;
+  line-height    : 1em;
+  padding        : 0.7em;
+  margin         : 0;
 }
 h2 {
-    margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 h2:after {
-    content : ' ∞';
-    color   : rgba(0,0,0,0.1);
+  content : ' ∞';
+  color   : rgba(0,0,0,0.1);
 }
 
 section, footer {
-    margin            : 0;
-    padding           : 0 1.5em;
+  margin            : 0;
+  padding           : 0 1.5em;
+}
+
+footer {
+  position : absolute;
+  padding  : 0;
+  width    : 100%;
+  height   : 11em;
+  z-index  : -20;
+}
+.footer {
+  margin   : 0 auto;
+  position : fixed;
+  left     : 0px;
+  right    : 0px;
+  bottom   : 0px;
+  height   : 10em;
+  z-index  : -15;
 }
 
 section ul {
-    list-style : none;
-    margin     : 0.5em 0;
-    padding    : 0;
+  list-style : none;
+  margin     : 0.5em 0;
+  padding    : 0;
 }
 section li:before {
-    content   : 'o ';
-    margin    : -0.4em 0 0 -1em;
-    font-size : 80%;
-    color     : rgba(0,0,0,0.1);
+  content   : 'o ';
+  margin    : -0.4em 0 0 -1em;
+  font-size : 80%;
+  color     : rgba(0,0,0,0.1);
 }
 section li {
-    margin: 0;
-    padding: 0.2em 0 0.2em 0em;
+  margin: 0;
+  padding: 0.2em 0 0.2em 0em;
 }
 .vcard {
-    display        : inline-block;
-    vertical-align : top;
-    margin-top     : 10px;
+  display        : inline-block;
+  vertical-align : top;
+  margin-top     : 10px;
+  border-left    : 1px dotted #ddd;
+  padding-left   : 1em;
 }
 #small {
-    background      : rgba(0,0,0,0.1);
-    border-radius   : 3px;
-    color           : #da206b;
-    display         : inline-block;
-    max-width       : 360px;
-    width           : 100%;
-    margin          : 10px 20px 0 0;
-    padding         : 0;
-    text-align      : center;
-    text-decoration : none;
-    border          : 2px dotted rgba(0,0,0,0.2);
+  float           : right;
+  background      : transparent url(t1.png) center center no-repeat;
+  border-radius   : 125px;
+  color           : #da206b;
+  display         : inline-block;
+  width           : 125px;
+  height          : 125px;
+  margin          : 10px 20px 0 0;
+  padding         : 0;
+  text-align      : center;
+  text-decoration : none;
+  border          : 4px solid rgba(218,32,107,0.8);
+}
+#small:hover {
+  background-image: url(t2.png);
 }
 #small span {
-    background    : transparent url(t1.png) center center no-repeat;
-    display       : block;
-    height        : 200px;
-    line-height   : 200px;
-    width         : 100%;
-    font-size     : 2em;
-    border-radius : 6px;
+  display     : block;
+  height      : 125px;
+  line-height : 125px;
+  font-size   : 1.8em;
 }
 #map {
-    background : #fff;
-    display    : none;
-    height     : 100%;
-    left       : 0;
-    position   : absolute;
-    text-align : center;
-    top        : 0;
-    width      : 100%;
-    z-index    : 10;
+  background : #fff;
+  display    : none;
+  height     : 100%;
+  left       : 0;
+  position   : absolute;
+  text-align : center;
+  top        : 0;
+  width      : 100%;
+  z-index    : 10;
 }
 #map .btn {
-    position           : absolute;
-    top                : 10px;
-    left               : 50%;
-    width              : 100px;
-    margin-left        : -50px;
-    z-index            : 1005;
-    background         : rgba(0,0,0,0.5);
-    color              : #ccc;
-    text-shadow        : 0 0 1px #000;
-    border-radius      : 6px;
-    -moz-transition    : background .3s ease;
-    -o-transition      : background .3s ease;
-    -webkit-transition : background .3s ease;
-    transition         : background .3s ease;
+  position           : absolute;
+  top                : 10px;
+  left               : 50%;
+  width              : 100px;
+  margin-left        : -50px;
+  z-index            : 1005;
+  background         : rgba(0,0,0,0.5);
+  color              : #ccc;
+  text-shadow        : 0 0 1px #000;
+  border-radius      : 6px;
+  -moz-transition    : background .3s ease;
+  -o-transition      : background .3s ease;
+  -webkit-transition : background .3s ease;
+  transition         : background .3s ease;
 }
 #map .btn:hover {
-    background      : rgba(155,0,0,0.8);
-    text-decoration : none;
+  background      : rgba(155,0,0,0.8);
+  text-decoration : none;
 }
 
 @font-face {
-    font-family : "Averia";
-    font-weight : normal;
-    src         : url(fonts/Averia-Regular.ttf) format("truetype");
+  font-family : "Averia";
+  font-weight : normal;
+  src         : url(fonts/Averia-Regular.ttf) format("truetype");
 }
 @font-face {
-    font-family : "Averia";
-    font-weight : bold;
-    src         : url(fonts/Averia-Bold.ttf) format("truetype");
+  font-family : "Averia";
+  font-weight : bold;
+  src         : url(fonts/Averia-Bold.ttf) format("truetype");
 }
 
 @media (max-width: 768px) {
-    body {
-    }
+  body {
+  }
 }
 @media (min-width: 768px){
-    h1 {
-        padding: 0.7em 0;
-    }
-    header, section, footer {
-        width  : 650px;
-        margin : 0 auto;
-    }
-    #logo {
-        margin : 40px auto 0;
-        display: block;
-    }
-    footer br{
-        float: left;
-    }
+  h1 {
+    padding: 0.7em 0;
+  }
+  header, section, .footer {
+    width  : 650px;
+    margin : 0 auto;
+  }
+  #logo {
+    margin : 40px auto 0;
+    display: block;
+  }
 }
