@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/tonio
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://tonio.biz
+  * I am tonio (https://keybase.io/tonio) on keybase.
+  * I have a public key with fingerprint C190 CB88 6122 9827 9B72  CB1F 0176 CDE7 C3C8 D75C
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01010cd694ac73b42ad758a04c137cdd0cd3ceb9ad1c461593a58d009fd982cbee190a",
+            "fingerprint": "c190cb88612298279b72cb1f0176cde7c3c8d75c",
+            "host": "keybase.io",
+            "key_id": "0176cde7c3c8d75c",
+            "kid": "01010cd694ac73b42ad758a04c137cdd0cd3ceb9ad1c461593a58d009fd982cbee190a",
+            "uid": "0497dea96cfbdeacdde803a26e8aa119",
+            "username": "tonio"
+        },
+        "service": {
+            "hostname": "tonio.biz",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1486715386,
+    "expire_in": 157680000,
+    "prev": "b012a5366df826f2a862d5b480009063bf9463a6e47b0f917ba1ebea37411372",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMIcAnicrZJtSBRBHMbPynypKDJMDCOWPlSI7ezuze6eH6wgNTOLwkoNjpnZWV1f
+ds+7PU3tJCowkkwoiLIIQ5HoPaJAUdSEsgRTCIwIRQWL0MowskKb7QWCvjbzYZj/
+/J5nnvkzPcsWuqLDYo6lccNzl9rDnnXVB10HL1d8reKwpVVwniquiP5caLFGA7a3
+yNA4D8cDNokGVQkRWcSSgDTZrSBeIkCUiaaxM5FQrCINEAkCtyoit6LxvKprqiIQ
+TClQecQlcrph5lO/z2+YNrMlrEqwokAgCIyTVSwzGOg8kCHRqExEorCLCBMWWAFH
+wcJhFKBJhsVqbOP9He8f/j/nDv6yk1RZo0iFRMdsZQZU4UUkQKogBIDqgAHqN1EJ
+ZbRtmSxmKJFjpTKDUKerzjP+Pk7CRiVT+fyWbRGrmJULbNvncVR2hc/Byin2/jbw
+YsPUWAOZoIz6A4Zlch7ASGIbjiOQFCgDt6jARI4e9hl+6jUcwi1DhWfDuYaWMUvM
+AwG5RQg1XRGgLiAFCpobSw6l8lDEuipBEUEqyZjXVSBjBCimSJQlwPomcM6TSk2L
+84gsJspnlgEj30R20E+5UHfnoUWusGjX4vAFzsdyRUet+PPd4oYjXROtNTfvpWc/
+Ta+f/Njd/eVbSl3vUNxEJjdfmLd068ZPQ1dTOxvl3P6Rbe27kvrmJZKbSpriuwLb
+L+cUnmqbakkJz3o+n+fLiI478TkyaTJi9npL/viG04M78MXzr/mJ2JLE+NVPpJTK
+D2djW0Ntm4PmnQPBjHePrVXNzcG3EWXz+yPWNO9MTpg2bnQsj9g0LvK1M/WFdzv6
+LozvTVMKprIaSvXRuWtRx1eeyYnNOZc5877qMPKsb7gKyzsvVTfOvkyojjnS3DT2
+Zov7fsHolS3JaGxkz2TvrYrd5MHakis962hW9ou66X1HPZ5XxbU1IfP7SbJkYCBv
+6nZriH/UP/gw5gd+k0Wt
+=hJe2
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tonio
+
+==================================================================
