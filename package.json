@@ -1,0 +1,23 @@
+{
+  "name": "tonio.biz",
+  "version": "1.0.0",
+  "description": "Antoine Abt personal website",
+  "main": "nope",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonio/tonio.biz.git"
+  },
+  "author": "Antoine Abt",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/tonio/tonio.biz/issues"
+  },
+  "homepage": "https://github.com/tonio/tonio.biz#readme",
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
