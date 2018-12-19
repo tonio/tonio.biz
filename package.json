@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tonio/tonio.biz#readme",
   "devDependencies": {
+    "git-cz": "^1.8.0",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
   }
