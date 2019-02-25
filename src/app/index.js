@@ -1,12 +1,7 @@
-class Testons {
-  constructor () {
-    const { truite } = { truite: 'toto' }
-    console.log(`${truite}`)
-  }
-  toto () {
-    this.checked = true
-  }
-}
-
-const truite = new Testons()
-truite.toto()
+const trigger = document.querySelector('.map')
+trigger.addEventListener(
+  'click',
+  e => import(/* webpackChunkName: "map" */ './map').then(module => {
+   module.default()
+  })
+)
