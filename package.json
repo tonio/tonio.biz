@@ -4,7 +4,7 @@
   "description": "Antoine Abt personal website",
   "main": "nope",
   "scripts": {
-    "serve": "webpack-dev-server --history-api-fallback --inline --progress",
+    "serve": "webpack-dev-server --history-api-fallback --inline --progress -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
