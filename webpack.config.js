@@ -7,7 +7,7 @@ module.exports = {
     index: path.join(__dirname, 'src/app/index.js')
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, '/dist'),
     filename: '[name].js',
     chunkFilename: '[name].bundle.js',
     publicPath: '/'

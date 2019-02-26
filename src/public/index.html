@@ -5,8 +5,6 @@
 
     <title>Antoine Abt, skier & web developer</title>
 
-    <link rel="stylesheet" media="screen" href="screen.css">
-
     <meta name="geo.country" content="FR" />
     <meta name="geo.position" content="45.628,5.8699" />
 
@@ -18,7 +16,7 @@
   </head>
   <body>
 
-    <div id=wrapper>
+    <div class=container>
 
       <header>
         <h1>Antoine Abt, skier &amp; web<sup>(geo)</sup>developer</h1>
@@ -54,10 +52,7 @@
         </p>
       </section>
 
-      <div id="map">
-        <span id="load">map is loading…&nbsp;&nbsp;</span>
-        <a href="/contact" id="closemap">close</a>
-      </div>
+      <div class="map"></div>
 
       <img src="dessin.png" width="300" height="300" alt="dessin" id="logo"/>
 
@@ -65,7 +60,7 @@
 
     <footer>
       <div class="footer">
-        <a href="#map" id="small" class="map">
+        <a href="#map" class="map-trigger">
           <span>+</span>
         </a>
         <div id="hcard-Antoine-Abt" class="vcard">
@@ -78,13 +73,9 @@
           </div>
           <a class="email" href="mailto:tonio@abt.im">tonio@abt.im</a>
         </div>
-        <p>
-        All content under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-          CC BY-NC-SA</a>.
-        </p>
       </div>
     </footer>
-
+     
   </body>
 </html>
 
