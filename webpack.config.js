@@ -34,7 +34,8 @@ module.exports = {
           'css-loader',
           'less-loader'
         ]
-      }
+      },
+      { test: /\.(woff|woff2)$/, loader:"url-loader?prefix=font/&limit=5000" },
     ]
   },
   plugins: [
